@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Raleway:wght@400;500&display=swap');
+
+:root {
+  --color-light-white: #fff;
+  --color-light-ruby: #ff4d61;
+  --color-light-blue: #376df6;
+  --color-light-teal: #00dbbe;
+  --color-light-yellow: #ffdc42;
+  --color-light-purple: #8749f3;
+  --color-light-green: #11b62c;
+  --color-light-navy: #292a3d;
+  --color-light-grey: #eeeef2;
+  --color-light-grey-alpha-50: rgba(238, 238, 242, 0.5);
+  --color-dark-white: #8f909e;
+  --color-dark-ruby: #bc2047;
+  --color-dark-blue: #2850af;
+  --color-dark-teal: #00b2b3;
+  --color-dark-yellow: #fd8208;
+  --color-dark-purple: #6b1cb0;
+  --color-dark-green: #06891c;
+  --color-dark-navy: #0a0a0f;
+  --color-dark-grey: #8f909e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light-yellow);
+  color: (237, 63%, 22%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Neuton', serif;
+}
+
+#top-bar {
+  background-color: var(--color-dark-ruby);
+  border-bottom: 2px solid var(--color-light-navy);
+  height: 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-container {
+  background-color: var(--color-light-white);
+  border: 2px solid var(--color-light-navy);
+  color: var(--color-dark-navy);
+  width: clamp(25ch, 50%, 80ch);
+  margin: 1em auto;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.paragraph {
+  margin: 0.625em 0;
+}
+
+.paragraph:first-child {
+  margin-top: 0;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+
+select,
+input {
+  cursor: pointer;
+  border: 2px solid var(--color-light-navy);
+  padding: 0.725em 0.5em;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-light-white);
+  outline: none;
+  appearance: none;
+  box-shadow: none;
+  width: 25ch;
+  margin: 0 0.35em;
+  text-transform: capitalize;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-light-navy);
+  color: var(--color-light-white);
+  border: 2px solid var(--color-light-white);
+  padding: 0.725rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin: 0 0.35em;
+}
+
+.btn:hover {
+  background-color: var(--color-light-white);
+  color: var(--color-dark-navy);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-light-ruby);
+}
